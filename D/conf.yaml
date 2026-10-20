@@ -1,0 +1,87 @@
+args: {}
+compile:
+  c: -O2 -std=c11
+  cpp: -O2 -std=c++14
+  java: ''
+  pas: -O2
+  py: ''
+data:
+  - cases: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75]
+folder: problem
+memory limit: 512 MiB
+name: average
+partial score: false
+pre: []
+samples:
+  - cases: [1]
+time limit: 2.0
+title:
+  zh-cn: 平均
+type: program
+users:
+  # ---- STD: 基于题解中的配对引理构造 ----
+  std:
+    std-lemma.cpp:
+      path: std/std-lemma.cpp
+      expected: '== 100'
+    std-lemma-long.cpp:
+      path: std/std-lemma-long.cpp
+      expected: '== 100'
+  cxr:
+    std.cpp:
+      path: cxr/std.cpp
+      expected: '== 100'
+  # ---- 乱搞----
+  solve:
+    wa-std-solve.cpp:
+      path: std/wa-std-solve.cpp
+      expected: '< 100'
+  patchwork:
+    wa-std.cpp:
+      path: std/wa-std.cpp
+      expected: '< 100'
+    wa-std1.cpp:
+      path: std/wa-std1.cpp
+      expected: '< 100'
+    wa-std.py:
+      path: std/wa-std.py
+      expected: '< 100'
+  bf:
+    bf.cpp:
+      path: bf/bf.cpp
+      expected: '< 100'
+    bf.py:
+      path: bf/bf.py
+      expected: '< 100'
+  wrong:
+    wrong_ignore_u.cpp:
+      path: wrong/wrong_ignore_u.cpp
+      expected: '< 100'
+    wrong_ignore_u.py:
+      path: wrong/wrong_ignore_u.py
+      expected: '< 100'
+    wrong_ignore_g.cpp:
+      path: wrong/wrong_ignore_g.cpp
+      expected: '< 100'
+    wrong_ignore_g.py:
+      path: wrong/wrong_ignore_g.py
+      expected: '< 100'
+    wrong_no_sum.cpp:
+      path: wrong/wrong_no_sum.cpp
+      expected: '< 100'
+    wrong_no_sum.py:
+      path: wrong/wrong_no_sum.py
+      expected: '< 100'
+    wrong_frobenius_k.cpp:
+      path: wrong/wrong_frobenius_k.cpp
+      expected: '< 100'
+    wrong_frobenius_k.py:
+      path: wrong/wrong_frobenius_k.py
+      expected: '< 100'
+    wrong_naive_split.cpp:
+      path: wrong/wrong_naive_split.cpp
+      expected: '< 100'
+    wrong_naive_split.py:
+      path: wrong/wrong_naive_split.py
+      expected: '< 100'
+version: 2

@@ -1,0 +1,35 @@
+args:
+  t: 100000
+  n: 1000000
+  sum_n: 1000000
+compile:
+  c: -O2 -std=c11
+  cpp: -O2 -std=c++14
+  java: ''
+  pas: -O2
+  py: ''
+data:
+- cases: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  score: 100
+folder: problem
+memory limit: 512 MiB
+name: story
+partial score: false
+pre:
+- cases: [1]
+samples:
+- cases: [1]
+time limit: 1.0
+title:
+  zh-cn: 故事
+type: program
+users:
+  havzriu:
+    std:
+      expected: == 100
+      path: ./havzriu/std.cpp
+  Ecrade_:
+    main:
+      expected: == 100
+      path: ./Ecrade_/main.cpp
+version: 2

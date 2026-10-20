@@ -1,0 +1,6 @@
+# Only reviewed deliverables belong in this reviewer's submission.
+# Local runners, setup notes, custom cases, binaries, logs and scratch audits stay local.
+*
+!.gitignore
+!main.cpp
+!suggestion.md

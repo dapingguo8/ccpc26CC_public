@@ -1,0 +1,219 @@
+{
+  "seed": 20261007,
+  "points": [
+    {
+      "point": 1,
+      "description": "Exact copy of the public sample",
+      "T": 7,
+      "min_N": 1,
+      "max_N": 8,
+      "sum_N": 27,
+      "input_bytes": 44,
+      "answer_bytes": 21,
+      "min_answer": 1,
+      "max_answer": 4,
+      "std_seconds": 0.1887,
+      "verified_by": [
+        "validator",
+        "std",
+        "independent formula",
+        "exponential brute",
+        "exact interval DP"
+      ],
+      "input_sha256": "962774d394b1224c59f756c113c272f6c14cd400e08d206b47a8c11f6d89a400",
+      "answer_sha256": "df911c466f6013c644c463c44d1a3f39df09079f7c3ee8db1bc9856853081fbf"
+    },
+    {
+      "point": 2,
+      "description": "All binary strings of lengths 1..15",
+      "T": 65534,
+      "min_N": 1,
+      "max_N": 15,
+      "sum_N": 917506,
+      "input_bytes": 1048581,
+      "answer_bytes": 196688,
+      "min_answer": 1,
+      "max_answer": 15,
+      "std_seconds": 0.3878,
+      "verified_by": [
+        "validator",
+        "std",
+        "independent formula",
+        "exponential brute",
+        "exact interval DP"
+      ],
+      "input_sha256": "bb1379bdd6e7fa547326ea5ccd7d5814b775fa29910b47dc8b063efcbbcffa72",
+      "answer_sha256": "8e334de81e5a3ba4b87af228e9612a192ecd87f079a2108077eccb6509038997"
+    },
+    {
+      "point": 3,
+      "description": "All length-16 binary strings starting with 0",
+      "T": 32768,
+      "min_N": 16,
+      "max_N": 16,
+      "sum_N": 524288,
+      "input_bytes": 589831,
+      "answer_bytes": 98341,
+      "min_answer": 1,
+      "max_answer": 16,
+      "std_seconds": 0.2098,
+      "verified_by": [
+        "validator",
+        "std",
+        "independent formula",
+        "exponential brute",
+        "exact interval DP"
+      ],
+      "input_sha256": "4659c976a4f94caf1b10f26d45328d402de2dd1e50fbfc3eb4ea5165e7bea9be",
+      "answer_sha256": "f79efe85701d0ac157d08de0d4000f711672b00333fce775eda651b99e610c98"
+    },
+    {
+      "point": 4,
+      "description": "All length-16 binary strings starting with 1",
+      "T": 32768,
+      "min_N": 16,
+      "max_N": 16,
+      "sum_N": 524288,
+      "input_bytes": 589831,
+      "answer_bytes": 98327,
+      "min_answer": 1,
+      "max_answer": 16,
+      "std_seconds": 0.2078,
+      "verified_by": [
+        "validator",
+        "std",
+        "independent formula",
+        "exponential brute",
+        "exact interval DP"
+      ],
+      "input_sha256": "d224d7da5cf6a783c738d1fc20555dbeb88acd95a34bf2521a6b8d05696951af",
+      "answer_sha256": "b5796f09d3d3e512c1d9e8a4d0623bf49f77b9ff75f8c01ade46c71bdd0617b8"
+    },
+    {
+      "point": 5,
+      "description": "Systematic block/endpoint/parity/zero-run corners and regressions",
+      "T": 17436,
+      "min_N": 1,
+      "max_N": 128,
+      "sum_N": 457117,
+      "input_bytes": 491996,
+      "answer_bytes": 52628,
+      "min_answer": 1,
+      "max_answer": 128,
+      "std_seconds": 0.1434,
+      "verified_by": [
+        "validator",
+        "std",
+        "independent formula",
+        "exact interval DP"
+      ],
+      "input_sha256": "4d9218510bcfe4b35928a7219e1d7197a9388a24c411a4e24fa33dfcf944a9c2",
+      "answer_sha256": "0096555bca29484a5e2cdc8b4b408d667901b7f1988330c2937c40322752c567"
+    },
+    {
+      "point": 6,
+      "description": "Maximum N: alternating string, maximum possible answer",
+      "T": 1,
+      "min_N": 1000000,
+      "max_N": 1000000,
+      "sum_N": 1000000,
+      "input_bytes": 1000005,
+      "answer_bytes": 9,
+      "min_answer": 1000000,
+      "max_answer": 1000000,
+      "std_seconds": 0.147,
+      "verified_by": [
+        "validator",
+        "std",
+        "independent formula"
+      ],
+      "input_sha256": "32c192e85e774f6a475eac0ee58f80fd33ab6a713b75e2817744ad929ff69596",
+      "answer_sha256": "953614b55d940dc9ebbf50655808c54860ae7aabcac55874cc780f6c34017144"
+    },
+    {
+      "point": 7,
+      "description": "Maximum N: all ones, maximum number of blocks",
+      "T": 1,
+      "min_N": 1000000,
+      "max_N": 1000000,
+      "sum_N": 1000000,
+      "input_bytes": 1000005,
+      "answer_bytes": 3,
+      "min_answer": 1,
+      "max_answer": 1,
+      "std_seconds": 0.1544,
+      "verified_by": [
+        "validator",
+        "std",
+        "independent formula"
+      ],
+      "input_sha256": "413713aab6a0bf05659a4d66078a2747caee895b8d97334340a40a9e6fb9ff89",
+      "answer_sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+    },
+    {
+      "point": 8,
+      "description": "Large structured cases: dominant blocks, thresholds, padding, palindromes",
+      "T": 20,
+      "min_N": 49999,
+      "max_N": 50001,
+      "sum_N": 1000000,
+      "input_bytes": 1000044,
+      "answer_bytes": 100,
+      "min_answer": 1,
+      "max_answer": 50001,
+      "std_seconds": 0.1475,
+      "verified_by": [
+        "validator",
+        "std",
+        "independent formula"
+      ],
+      "input_sha256": "b6cb7e5baf326fa40955ebcfa9a728750be34585b60b04e122038caf39c08067",
+      "answer_sha256": "b7271dae746fe42d87f417d883e1d4aab14e04ed58a3c859d5b5a657c721f1bb"
+    },
+    {
+      "point": 9,
+      "description": "Maximum T and sum N: 100000 cases with large/small transitions",
+      "T": 100000,
+      "min_N": 1,
+      "max_N": 150002,
+      "sum_N": 1000000,
+      "input_bytes": 1200008,
+      "answer_bytes": 300022,
+      "min_answer": 1,
+      "max_answer": 150000,
+      "std_seconds": 0.4886,
+      "verified_by": [
+        "validator",
+        "std",
+        "independent formula"
+      ],
+      "input_sha256": "ffcdd41fa292fb491c3dd786c234a10a1bed61c6c1f4a89367624bc59c0bdd56",
+      "answer_sha256": "c982ffb49bebbbd4dce77fa8cbdca1d879d25bbe1933e8a8b847f526add84247"
+    },
+    {
+      "point": 10,
+      "description": "A 700000-character random string and 30 varied medium random cases",
+      "T": 31,
+      "min_N": 10000,
+      "max_N": 700000,
+      "sum_N": 1000000,
+      "input_bytes": 1000066,
+      "answer_bytes": 93,
+      "min_answer": 1,
+      "max_answer": 3,
+      "std_seconds": 0.1524,
+      "verified_by": [
+        "validator",
+        "std",
+        "independent formula"
+      ],
+      "input_sha256": "94a148ab3f20ad910ee01d180a79bf93302d5a4bab40f4cdd80956d2bf7d654e",
+      "answer_sha256": "07d7047d87fc002a56e73d9821f0f878ba995287ddce463e6a98414600184dd5"
+    }
+  ],
+  "input_bytes": 7920411,
+  "answer_bytes": 746232,
+  "total_bytes": 8666643,
+  "total_MB": 8.666643,
+  "total_MiB": 8.265154838562012
+}

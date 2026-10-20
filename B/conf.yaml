@@ -1,0 +1,80 @@
+args:
+  K: 1000
+  N: 10000
+  H: 10000
+compile:
+  c: -O2 -std=c11
+  cpp: -O2 -std=c++14
+  java: ""
+  pas: -O2
+  py: ""
+data:
+  - cases:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 26
+      - 27
+      - 28
+      - 29
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+      - 35
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+      - 45
+      - 46
+    score: 100
+folder: problem
+memory limit: 512 MiB
+name: course
+partial score: false
+pre: []
+samples:
+  - cases:
+      - 1
+      - 2
+      - 3
+time limit: 4.0
+title:
+  en: Course Selection
+  zh-cn: 别样的选课大战
+type: program
+users:
+  dhw:
+    std:
+      expected: == 100
+      path: ./dhw/std.cpp
+version: 2

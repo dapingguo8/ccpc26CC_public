@@ -1,0 +1,94 @@
+args:
+  n: 1000
+  m: 1000
+  q: 1000
+  mode: mixed
+compile:
+  c: -O2 -std=c11
+  cpp: -O2 -std=c++14
+  java: ''
+  pas: -O2
+  py: ''
+data:
+- cases: [1, 2, 3, 4, 5, 6, 7, 8]
+  args: {n: 10, m: 40, q: 40, mode: mixed}
+- cases: [9, 10]
+  args: {n: 1, m: 100, q: 100, mode: extreme}
+- cases: [11, 12, 13, 14]
+  args: {n: 1000, m: 20000, q: 20000, mode: equal}
+- cases: [15, 16, 17, 18]
+  args: {n: 1000, m: 20000, q: 20000, mode: no_full}
+- cases: [19, 20, 21, 22]
+  args: {n: 1000, m: 20000, q: 20000, mode: full}
+- cases: [23, 24]
+  args: {n: 1000000000, m: 50000, q: 50000, mode: prefix}
+- cases: [25, 26]
+  args: {n: 1000000000, m: 50000, q: 50000, mode: suffix}
+- cases: [27, 28]
+  args: {n: 1000000000, m: 50000, q: 50000, mode: extreme}
+- cases: [29, 30]
+  args: {n: 1000000000, m: 50000, q: 50000, mode: full}
+- cases: [31, 32]
+  args: {n: 1000000000, m: 50000, q: 50000, mode: no_full}
+- cases: [33, 34]
+  args: {n: 1000000000, m: 500000, q: 500000, mode: mixed}
+- cases: [35, 36]
+  args: {n: 1000000000, m: 500000, q: 500000, mode: full}
+- cases: [37, 38]
+  args: {n: 1000000000, m: 1, q: 1, mode: mixed}
+- cases: [39, 40]
+  args: {n: 1000000000, m: 500000, q: 500000, mode: equal}
+- cases: [41, 42]
+  args: {n: 1000000000, m: 500000, q: 500000, mode: no_full}
+- cases: [43, 44]
+  args: {n: 1000000000, m: 500000, q: 500000, mode: no_full, qmode: all}
+- cases: [45, 46]
+  args: {n: 1000, m: 20000, q: 20000, mode: no_full, qmode: all}
+folder: problem
+memory limit: 512 MiB
+name: color
+partial score: false
+pre: []
+samples:
+- cases: [1]
+  args:
+    manual: true
+time limit: 1.0
+title:
+  zh-cn: 纸带染色
+type: program
+users:
+  std:
+    std.cpp:
+      expected: == 100
+      path: ./rsy/std/std.cpp
+  bf:
+    bf.cpp:
+      expected: < 100
+      path: ./rsy/bf/bf.cpp
+  wrong:
+    wrong_no_cutoff.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_no_cutoff.cpp
+    wrong_cutoff_plus_one.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_cutoff_plus_one.cpp
+    wrong_nonstrict.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_nonstrict.cpp
+    wrong_on2.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_on2.cpp
+    wrong_per_query.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_per_query.cpp
+    wrong_greedy_stop.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_greedy_stop.cpp
+    wrong_own_point.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_own_point.cpp
+    wrong_window_no_l.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_window_no_l.cpp
+version: 2

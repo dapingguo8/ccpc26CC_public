@@ -1,0 +1,36 @@
+args:
+  t: 10000
+  n: 200000
+  k: 200000
+  sum_n: 200000
+compile:
+  c: -O2 -std=c11
+  cpp: -O2 -std=c++14
+  java: ''
+  pas: -O2
+  py: ''
+data:
+- cases: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37]
+  score: 100
+folder: problem
+memory limit: 512 MiB
+name: repeater
+partial score: false
+pre: []
+samples:
+- cases: [1, 2]
+time limit: 1.0
+title:
+  en: Carefree Melody
+  zh-cn: 无忧旋律
+type: program
+users:
+  std:
+    std:
+      expected: == 100
+      path: ./std/std.cpp
+  VictorYuan:
+    main:
+      expected: == 100
+      path: ./VictorYuan/main.cpp
+version: 2

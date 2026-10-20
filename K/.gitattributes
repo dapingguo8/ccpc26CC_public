@@ -1,0 +1,4 @@
+# 本数据包统一 LF 行尾；val.cpp 的 testlib 严格模式按 LF 判定，
+# 因此固定 data/down 的换行符，避免 core.autocrlf 在检出时转成 CRLF。
+*.in  text eol=lf
+*.ans text eol=lf

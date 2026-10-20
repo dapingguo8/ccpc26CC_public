@@ -1,0 +1,127 @@
+args:
+  n: 1000
+  M: 1000
+  mode: random
+compile:
+  c: -O2 -std=c11
+  cpp: -O2 -std=c++14
+  java: ''
+  pas: -O2
+  py: ''
+data:
+- cases: [1, 2]
+  args: {n: 10, M: 10, mode: random}
+- cases: [3, 4]
+  args: {n: 30, M: 30, mode: random}
+- cases: [5, 6]
+  args: {n: 30, M: 30, mode: few}
+- cases: [7, 8]
+  args: {n: 30, M: 30, mode: equal}
+- cases: [9, 10]
+  args: {n: 30, M: 30, mode: pal}
+- cases: [11, 12]
+  args: {n: 30, M: 2, mode: random}
+- cases: [13]
+  args: {n: 1, M: 2, mode: random}
+- cases: [14]
+  args: {n: 1, M: 1000000, mode: random}
+- cases: [15, 16]
+  args: {n: 300, M: 1000, mode: random}
+- cases: [17, 18]
+  args: {n: 300, M: 1000, mode: few}
+- cases: [19, 20]
+  args: {n: 2000, M: 1000000, mode: random}
+- cases: [21, 22]
+  args: {n: 2000, M: 1000000, mode: pal}
+- cases: [23, 24]
+  args: {n: 2000, M: 1000000, mode: few}
+- cases: [25, 26]
+  args: {n: 8000, M: 1000000, mode: random}
+- cases: [27, 28]
+  args: {n: 8000, M: 1000000, mode: equal}
+- cases: [29, 30]
+  args: {n: 8000, M: 1000000, mode: few}
+- cases: [31, 32]
+  args: {n: 8000, M: 1000000, mode: extreme}
+- cases: [33, 34]
+  args: {n: 8000, M: 2, mode: random}
+- cases: [35, 36]
+  args: {n: 8000, M: 1000000, mode: pal}
+- cases: [37, 38]
+  args: {n: 5000, M: 999983, mode: random}
+- cases: [39, 40]
+  args: {n: 8000, M: 999983, mode: extreme}
+- cases: [41, 42]
+  args: {n: 8000, M: 1000000, mode: square}
+- cases: [43]
+  args: {n: 8000, M: 1000000, mode: square, seg: 40}
+- cases: [44, 45]
+  args: {n: 2000, M: 1000000, mode: square, seg: 40}
+- cases: [46]
+  args: {n: 2000, M: 1000000, mode: square}
+- cases: [47, 48]
+  args: {n: 8000, M: 1000000, mode: levels, k: 3}
+- cases: [49]
+  args: {n: 8000, M: 1000000, mode: levels, base: 720720}
+- cases: [50]
+  args: {n: 2000, M: 1000000, mode: levels, base: 720720}
+- cases: [51]
+  args: {n: 8000, M: 1000000, mode: levels, k: 6}
+folder: problem
+memory limit: 512 MiB
+name: mirror
+partial score: false
+pre: []
+samples:
+- cases: [1]
+  args:
+    manual: true
+time limit: 2.0
+title:
+  zh-cn: 余镜
+type: program
+users:
+  std:
+    std.cpp:
+      expected: == 100
+      path: ./rsy/std/std.cpp
+  bf:
+    bf.cpp:
+      expected: < 100
+      path: ./rsy/bf/bf.cpp
+  wrong:
+    wrong_pal_only.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_pal_only.cpp
+    wrong_cubic.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_cubic.cpp
+    wrong_early_break.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_early_break.cpp
+    wrong_zero.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_zero.cpp
+    wrong_int.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_int.cpp
+    wrong_divisor.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_divisor.cpp
+    wrong_manacher_m.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_manacher_m.cpp
+    wrong_trial_div.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_trial_div.cpp
+    wrong_square_div.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_square_div.cpp
+    wrong_zero_break.cpp:
+      expected: < 100
+      path: ./rsy/wrong/wrong_zero_break.cpp
+  Ecrade_:
+    main:
+      expected: == 100
+      path: ./Ecrade_/main.cpp
+version: 2
